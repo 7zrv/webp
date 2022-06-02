@@ -83,7 +83,7 @@ ul.tabs li.current{
 }
 
 .content-container{
-    height: 700px;
+    height: 760px;
     
     padding-top: 20px;
 }
@@ -123,6 +123,7 @@ ul.tabs li.current{
 }
 
 .contents-wrap{
+    cursor: pointer;
     display: inline-block;
     margin-right: 15px;
     margin-bottom: 15px;
@@ -137,8 +138,14 @@ ul.tabs li.current{
     transition: .5s;
 }
 
-.tab-contents{
+.tab-contents-top{
+    display: flex;
     padding-top: 20px;
+}
+
+.tab-contents-low{
+    display: flex;
+    padding-bottom: 20px;
 }
 
 .content-img{
@@ -152,7 +159,7 @@ ul.tabs li.current{
 }
 
 .ticket-city{
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 100;
     margin-top: 8px;
     margin-left: 10px;
@@ -162,7 +169,7 @@ ul.tabs li.current{
 .hotel-name{
     margin-left: 10px;
     margin-bottom: 40px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
 }
 
