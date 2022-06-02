@@ -1,0 +1,280 @@
+*{
+    box-sizing: border-box;
+    outline: none;
+    text-decoration : none;
+    white-space: nowrap;
+}
+html{
+    margin: 0 auto;
+    width: 1348px; 
+    height:100%
+}
+
+body{
+    width: 1060px;
+    margin: 0 auto;
+}
+
+header{
+    padding-top: 12px;
+    height: 123px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+
+.topheader{
+    display: flex;
+    width: 1348px;
+    height: 100%;
+}
+
+.topheader-nav{
+    width: 1060px;
+    height: 100%;
+}
+
+.mainlogo{
+    display: inline-block;
+    width: 128px;
+    height: 50px;
+
+}
+.main-img{
+    margin: auto;
+}
+
+.mainlogo img{
+    width: 128px;
+    height: 28px;
+    vertical-align: middle;
+}
+
+.searchbox{
+    display: inline-block;
+    position: relative;
+    height: 48px;
+    margin-left: 24px;
+    position: relative;
+    width: 326px;
+    border-radius: 4px;
+    color: rgb(73, 80, 86);
+    background-color: rgb(245, 246, 247);
+}
+
+/*hover 살짝 진해짐*/
+.searchbox:hover{
+    background-color: #495056;
+}
+.searchbox:hover .search-input .input-box{
+    background-color: #495056;
+}
+/*누르면 하얘짐*/
+/*.searchbox:focus-within{
+    background-color: white;
+    box-shadow:  black 1px;
+}
+
+.search-input:focus{
+    background-color: white;
+}*/
+
+.searchbox img{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+.search-input{
+    margin: 12px 12px;
+    color: rgb(73, 80, 86);
+}
+
+.input-box{
+    background: rgb(245, 246, 247);
+    border: none;
+    outline: none;
+    position: relative;
+    font-size: 15px;
+    font-weight: 500;
+    width: 260px;
+    vertical-align: middle;
+}
+
+
+.gni{
+    display: inline-block;
+    width: 568px;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+}
+
+.justspace{
+    display: inline-block;
+    width: 231px;
+    height: 100%;
+}
+.gni-partner{
+    font-size: 15px;
+    font-weight: 600;
+    display: inline-block;
+    width: 133.13px;
+    height: 100%;
+    margin-right: 8px;
+}
+
+.gni-partner:hover{
+    background-color:darkgrey;
+    border-radius: 3px;
+}
+
+.login{
+    display: inline-block;
+    width: 69px;
+    height: 100%;
+    margin-right: 8px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.login:hover{
+    background-color:darkgrey;
+    border-radius: 3px;
+}
+.joinus{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 32px;
+    padding-right: 32px;
+    width: 134;
+    height: 100%;
+    border: 1px solid #a7d4f9;
+    border-radius: 2px;
+    color: #2b96ed;
+}
+
+.joinus:hover{
+    background-color:#2b96ed;
+    border-radius: 3px;
+}
+
+.lowheader{
+    display: flex;
+    width: 1348px;
+    margin-bottom: 20px;
+    height: 51px;
+}
+
+.lowheader_nav{
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid #dee2e6;
+}
+
+
+.allmenu{
+    display: flex;
+    width: auto;
+    color: #495056;
+    height: 52px;
+}
+
+
+.allmenu-a{
+    align-items: center;
+    display: flex;
+    height: 50px;
+}
+.allmenu.current{
+    border-bottom:3px solid#51abf3;
+}
+.allmenu-a img{
+    display: inline-block;
+    margin-bottom: 4px;
+    border: 0px;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.allmenu-a span{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 47px;
+    vertical-align: middle;
+}
+
+.allmenu-a span:hover{
+    border-bottom:3px solid#51abf3;
+
+}
+
+
+.menu{
+    width: 60px;
+}
+
+
+
+.menu1{
+    width: 80px;
+    margin: 0 12px 0 0;
+}
+
+.menu2{
+    width: 100px;
+    margin: 0 12px;
+}
+
+
+.menu3{
+    width: 96px;
+    margin: 0 12px;
+}
+
+
+.menu4{
+    width: 80px;
+    margin: 0 12px;
+}
+
+.menu4 span{
+    border-bottom:3px solid#51abf3;
+}
+
+.menu5{
+    width: 80px;
+    margin: 0 12px;
+}
+
+
+.menu6{
+    width: 56px;
+    margin: 0 12px;
+}
+
+.menu7{
+    width: 72px;
+    margin: 0 12px;
+}
+
+
+.menu8{
+    width: 72px;
+    margin: 0 12px;
+}
+
+.menu9{
+    width: 72px;
+    margin: 0 0 0 12px;
+}
+
+.menu10{
+    width: 72px;
+    margin: 0 0 0 12px;
+}
+
