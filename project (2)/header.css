@@ -3,6 +3,7 @@
     outline: none;
     text-decoration : none;
     white-space: nowrap;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 html{
     margin: 0 auto;
@@ -11,167 +12,149 @@ html{
 }
 
 body{
+    height: 100%;
     width: 1060px;
     margin: 0 auto;
 }
 
 header{
-    padding-top: 12px;
     height: 123px;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
+    
 }
 
 
 .topheader{
-    display: flex;
     width: 1348px;
-    height: 100%;
+    height: 72px;
 }
-
-.topheader-nav{
+ 
+.topheader-wrap{
     width: 1060px;
-    height: 100%;
+    height: 72px;
+    display: flex;
+    flex-direction: row;
 }
 
 .mainlogo{
-    display: inline-block;
     width: 128px;
-    height: 50px;
-
-}
-.main-img{
-    margin: auto;
+    height: 72px;
 }
 
-.mainlogo img{
+#logo-div{
+    width: 128px;
+    height: 72px;
+    
+}
+#logo-img{
+    margin-top: 22px;
     width: 128px;
     height: 28px;
-    vertical-align: middle;
+}
+
+.searchbox-wrap{
+    width: 340px;
+    height: 72px;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
 }
 
 .searchbox{
-    display: inline-block;
-    position: relative;
-    height: 48px;
-    margin-left: 24px;
-    position: relative;
     width: 326px;
-    border-radius: 4px;
-    color: rgb(73, 80, 86);
-    background-color: rgb(245, 246, 247);
+    height: 48px;
+    background-color: aqua;
+    margin-left: 14px;
 }
 
-/*hover 살짝 진해짐*/
-.searchbox:hover{
-    background-color: #495056;
+.gni-wrap{
+    width: 568px;
+    height: 72px;
 }
-.searchbox:hover .search-input .input-box{
-    background-color: #495056;
-}
-/*누르면 하얘짐*/
-/*.searchbox:focus-within{
-    background-color: white;
-    box-shadow:  black 1px;
-}
-
-.search-input:focus{
-    background-color: white;
-}*/
-
-.searchbox img{
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-}
-.search-input{
-    margin: 12px 12px;
-    color: rgb(73, 80, 86);
-}
-
-.input-box{
-    background: rgb(245, 246, 247);
-    border: none;
-    outline: none;
-    position: relative;
-    font-size: 15px;
-    font-weight: 500;
-    width: 260px;
-    vertical-align: middle;
-}
-
 
 .gni{
-    display: inline-block;
-    width: 568px;
-    height: 100%;
-    justify-content: flex-end;
+    width: 336px;
+    height: 72px;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: row;
+}
+
+.partner{
+    width: 133px;
+    height: 72px;
     align-items: center;
-    text-align: center;
+    display: flex;
 }
 
-.justspace{
-    display: inline-block;
-    width: 231px;
-    height: 100%;
-}
-.gni-partner{
-    font-size: 15px;
-    font-weight: 600;
-    display: inline-block;
-    width: 133.13px;
-    height: 100%;
-    margin-right: 8px;
-}
-
-.gni-partner:hover{
-    background-color:darkgrey;
-    border-radius: 3px;
+.partner-inner{
+    width: 133px;
+    height: 36px;
+    
 }
 
 .login{
-    display: inline-block;
     width: 69px;
-    height: 100%;
-    margin-right: 8px;
-    font-size: 15px;
-    font-weight: 600;
+    height: 72px;
+    align-items: center;
+    display: flex;
+}
+.login-inner{
+    width: 69px;
+    height: 36px;
+    
 }
 
-.login:hover{
-    background-color:darkgrey;
-    border-radius: 3px;
+.join{
+    width: 134px;
+    height: 72px;
+    align-items: center;
+    display: flex;
+    
 }
-.joinus{
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 700;
-    padding-left: 32px;
-    padding-right: 32px;
-    width: 134;
-    height: 100%;
-    border: 1px solid #a7d4f9;
-    border-radius: 2px;
+
+.join-inner{
+    width: 134px;
+    height: 36px;
+    border: 1px solid #2b96ed;
+    border-radius: 4px;
+}
+.gni-span0{
+    margin-left: 1px;
+    line-height: 36px;
+    vertical-align: middle;
+    color: #666d75;
+}
+
+.gni-span1{
+    margin-left: 14px;
+    line-height: 36px;
+    vertical-align: middle;
+    color: #666d75;
+}
+
+.gni-span2{
+    margin-left: 40px;
+    line-height: 36px;
+    vertical-align: middle;
     color: #2b96ed;
 }
 
-.joinus:hover{
-    background-color:#2b96ed;
-    border-radius: 3px;
-}
+
+
+
+
 
 .lowheader{
     display: flex;
     width: 1348px;
     margin-bottom: 20px;
     height: 51px;
+    border-bottom: 1px solid #dee2e6;
 }
 
 .lowheader_nav{
     height: 50px;
     width: 100%;
-    border-bottom: 1px solid #dee2e6;
 }
 
 

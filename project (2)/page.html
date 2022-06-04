@@ -14,48 +14,42 @@
   <body>
     <header>
       <div class="topheader">
-        <nav class="topheader-nav">
+        <div class="topheader-wrap">
           <!-- 메인로고 -->
           <div class="mainlogo">
-            <div class="main-img">
-              <a href="" >
-                <img src="C:\Users\윤서진\Desktop\web\project\media\mainlogo.png" class="img_logo"/>
-              </a>
+            <div id="logo-div">
+              <img id="logo-img"  src="project (2)/media/logo.jpeg">
             </div>
           </div>
-          <!-- 검색창 -->
-          <div class="searchbox">
-            <div class="search-input">
-              <img src="https://dffoxz5he03rp.cloudfront.net/icons/ic_search_20x20_gray_500.svg">
-              <input class="input-box" onclick=changeColor() placeholder="도시나 상품을 검색하세요" onfocus="this.placeholder=''" onblur="this.placeholder='도시나 상품을 검색하세요'">
+          <!--검색창-->
+          <div class="searchbox-wrap">
+            <div class="searchbox">
+
             </div>
-            
           </div>
-          <!-- 우측상단 -->
-          <div class="gni">
-            <div class="gni-wrap">
-              <div class="justspace">
-                
-              </div>
-              <div class="gni-partner">
-                <a href="" class="gni-item">
-                  파트너 등록하기
-                </a>
+          <!--gni-->
+          <div class="gni-wrap">
+            <div class="gni">
+              <div class="partner">
+                <div class="partner-inner">
+                  <span class="gni-span0">파트너 등록하기</span>
+                </div>
               </div>
               <div class="login">
-                <a href="" class="gni-item">
-                  로그인
-                </a>
+                <div class="login-inner">
+                  <span class="gni-span1">로그인</span>
+                </div>
               </div>
-              <div class="joinus">
-                <a href="">
-                  회원가입
-                </a>
+              <div class="join">
+                <div class="join-inner">
+                  <span class="gni-span2">회원가입</span>
+                </div>
               </div>
             </div>
           </div>
-        </nav>
+        </div>
       </div>
+              
       <div class="lowheader">
         <nav class="lowheader_nav">
           <div class="allmenu">
@@ -272,13 +266,313 @@
               
               <div id="tab-2" class="tab-content">
                 <span class="top-span">국내 액티비티</span>
+                <div class="tab-contents-top">
+                  <div class="contents-wrap" OnClick="location.href ='#'">
+                      <div>
+                        <img class="content-img" src="media/wes1.jpeg">
+                      </div>
+                      <div class="content-info">
+                        <span class="ticket-city">티켓 ・ 서울</span>
+                        <br>
+                        <span class="hotel-name">웨스턴 조선 서울 숙박권</span>
+                        <div class="content-info-low">
+                          <span class="review-event">
+                            <img src="media/review-img.svg"> 후기 이벤트
+                          </span>
+                          <br>
+                          <span class="content-info-low-price">
+                            259,000원
+                          </span>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="contents-wrap" OnClick="location.href ='#'">
+                    <div>
+                      <img class="content-img" src="media/whinix2.jpeg">
+                    </div>
+                    <div class="content-info">
+                      <span class="ticket-city">티켓 ・ 강원도</span>
+                      <br>
+                      <span class="hotel-name">휘닉스 평창 리조트 숙박권</span>
+                      <div class="content-info-low">
+                        <span class="review-event">
+                          <img src="media/review-img.svg"> 후기 이벤트
+                        </span>
+                        <br>
+                        <span class="content-info-low-price">
+                          100,000원
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contents-wrap" OnClick="location.href ='#'">
+                    <div>
+                      <img class="content-img" src="media/sono3.jpeg">
+                    </div>
+                    <div class="content-info">
+                      <span class="ticket-city">티켓 ・ 전라도</span>
+                      <br>
+                      <span class="hotel-name">소노벨 변산 숙박권</span>
+                      <div class="content-info-low">
+                        <span class="review-event">
+                          <img src="media/review-img.svg"> 후기 이벤트
+                        </span>
+                        <br>
+                        <span class="content-info-low-price">
+                          112,000원
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contents-wrap" OnClick="location.href ='#'">
+                    <div>
+                      <img class="content-img" src="media\cota4.jpeg">
+                    </div>
+                    <div class="content-info">
+                      <span class="ticket-city">티켓 ・ 코타키나발루</span>
+                      <br>
+                      <span class="hotel-name">코타키나발루 샹그릴라 숙박권</span>
+                      <div class="content-info-low">
+                        <span class="review-event">
+                          <img src="media/review-img.svg"> 후기 이벤트
+                        </span>
+                        <br>
+                        <span class="content-info-low-price">
+                          112,000원
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-contents-low">
+                  <div class="contents-wrap" OnClick="location.href ='#'">
+                      <div>
+                        <img class="content-img" src="media\lotte5.jpeg">
+                      </div>
+                      <div class="content-info">
+                        <span class="ticket-city">티켓 ・ 괌</span>
+                        <br>
+                        <span class="hotel-name">롯데호텔 괌 3박 숙박권</span>
+                        <div class="content-info-low">
+                          <span class="review-event">
+                            <img src="media/review-img.svg"> 후기 이벤트
+                          </span>
+                          <br>
+                          <span class="content-info-low-price">
+                            959,790원
+                          </span>
+                        </div>
+                      </div>
+                  </div>
+                  
+                </div>
               </div>
               
               <div id="tab-3" class="tab-content">
                 <span class="top-span">제주 호캉스</span>
+                <div class="tab-contents-top">
+                  <div class="contents-wrap" OnClick="location.href ='#'">
+                      <div>
+                        <img class="content-img" src="media/wes1.jpeg">
+                      </div>
+                      <div class="content-info">
+                        <span class="ticket-city">티켓 ・ 서울</span>
+                        <br>
+                        <span class="hotel-name">웨스턴 조선 서울 숙박권</span>
+                        <div class="content-info-low">
+                          <span class="review-event">
+                            <img src="media/review-img.svg"> 후기 이벤트
+                          </span>
+                          <br>
+                          <span class="content-info-low-price">
+                            259,000원
+                          </span>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="contents-wrap" OnClick="location.href ='#'">
+                    <div>
+                      <img class="content-img" src="media/whinix2.jpeg">
+                    </div>
+                    <div class="content-info">
+                      <span class="ticket-city">티켓 ・ 강원도</span>
+                      <br>
+                      <span class="hotel-name">휘닉스 평창 리조트 숙박권</span>
+                      <div class="content-info-low">
+                        <span class="review-event">
+                          <img src="media/review-img.svg"> 후기 이벤트
+                        </span>
+                        <br>
+                        <span class="content-info-low-price">
+                          100,000원
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contents-wrap" OnClick="location.href ='#'">
+                    <div>
+                      <img class="content-img" src="media/sono3.jpeg">
+                    </div>
+                    <div class="content-info">
+                      <span class="ticket-city">티켓 ・ 전라도</span>
+                      <br>
+                      <span class="hotel-name">소노벨 변산 숙박권</span>
+                      <div class="content-info-low">
+                        <span class="review-event">
+                          <img src="media/review-img.svg"> 후기 이벤트
+                        </span>
+                        <br>
+                        <span class="content-info-low-price">
+                          112,000원
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contents-wrap" OnClick="location.href ='#'">
+                    <div>
+                      <img class="content-img" src="media\cota4.jpeg">
+                    </div>
+                    <div class="content-info">
+                      <span class="ticket-city">티켓 ・ 코타키나발루</span>
+                      <br>
+                      <span class="hotel-name">코타키나발루 샹그릴라 숙박권</span>
+                      <div class="content-info-low">
+                        <span class="review-event">
+                          <img src="media/review-img.svg"> 후기 이벤트
+                        </span>
+                        <br>
+                        <span class="content-info-low-price">
+                          112,000원
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-contents-low">
+                  <div class="contents-wrap" OnClick="location.href ='#'">
+                      <div>
+                        <img class="content-img" src="media\lotte5.jpeg">
+                      </div>
+                      <div class="content-info">
+                        <span class="ticket-city">티켓 ・ 괌</span>
+                        <br>
+                        <span class="hotel-name">롯데호텔 괌 3박 숙박권</span>
+                        <div class="content-info-low">
+                          <span class="review-event">
+                            <img src="media/review-img.svg"> 후기 이벤트
+                          </span>
+                          <br>
+                          <span class="content-info-low-price">
+                            959,790원
+                          </span>
+                        </div>
+                      </div>
+                  </div>
+                  
+                </div>
               </div>
               <div id="tab-4" class="tab-content">
                 <span class="top-span">해외 호캉스</span>
+                <div class="tab-contents-top">
+                  <div class="contents-wrap" OnClick="location.href ='#'">
+                      <div>
+                        <img class="content-img" src="media/wes1.jpeg">
+                      </div>
+                      <div class="content-info">
+                        <span class="ticket-city">티켓 ・ 서울</span>
+                        <br>
+                        <span class="hotel-name">웨스턴 조선 서울 숙박권</span>
+                        <div class="content-info-low">
+                          <span class="review-event">
+                            <img src="media/review-img.svg"> 후기 이벤트
+                          </span>
+                          <br>
+                          <span class="content-info-low-price">
+                            259,000원
+                          </span>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="contents-wrap" OnClick="location.href ='#'">
+                    <div>
+                      <img class="content-img" src="media/whinix2.jpeg">
+                    </div>
+                    <div class="content-info">
+                      <span class="ticket-city">티켓 ・ 강원도</span>
+                      <br>
+                      <span class="hotel-name">휘닉스 평창 리조트 숙박권</span>
+                      <div class="content-info-low">
+                        <span class="review-event">
+                          <img src="media/review-img.svg"> 후기 이벤트
+                        </span>
+                        <br>
+                        <span class="content-info-low-price">
+                          100,000원
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contents-wrap" OnClick="location.href ='#'">
+                    <div>
+                      <img class="content-img" src="media/sono3.jpeg">
+                    </div>
+                    <div class="content-info">
+                      <span class="ticket-city">티켓 ・ 전라도</span>
+                      <br>
+                      <span class="hotel-name">소노벨 변산 숙박권</span>
+                      <div class="content-info-low">
+                        <span class="review-event">
+                          <img src="media/review-img.svg"> 후기 이벤트
+                        </span>
+                        <br>
+                        <span class="content-info-low-price">
+                          112,000원
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contents-wrap" OnClick="location.href ='#'">
+                    <div>
+                      <img class="content-img" src="media\cota4.jpeg">
+                    </div>
+                    <div class="content-info">
+                      <span class="ticket-city">티켓 ・ 코타키나발루</span>
+                      <br>
+                      <span class="hotel-name">코타키나발루 샹그릴라 숙박권</span>
+                      <div class="content-info-low">
+                        <span class="review-event">
+                          <img src="media/review-img.svg"> 후기 이벤트
+                        </span>
+                        <br>
+                        <span class="content-info-low-price">
+                          112,000원
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-contents-low">
+                  <div class="contents-wrap" OnClick="location.href ='#'">
+                      <div>
+                        <img class="content-img" src="media\lotte5.jpeg">
+                      </div>
+                      <div class="content-info">
+                        <span class="ticket-city">티켓 ・ 괌</span>
+                        <br>
+                        <span class="hotel-name">롯데호텔 괌 3박 숙박권</span>
+                        <div class="content-info-low">
+                          <span class="review-event">
+                            <img src="media/review-img.svg"> 후기 이벤트
+                          </span>
+                          <br>
+                          <span class="content-info-low-price">
+                            959,790원
+                          </span>
+                        </div>
+                      </div>
+                  </div>
+                  
+                </div>
               </div>
             </div>
            
