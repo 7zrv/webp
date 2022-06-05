@@ -1,214 +1,28 @@
 footer{
     border-top: 1px solid #dee2e6;
-    display: flex;
-    flex-direction: column;
-    width:1060px;
-    bottom:0; 
-    position: relative;
-}
-
-.topfooter{
-    display: flex;
-    padding-bottom: 20px;
-}
-
-img{
-    border-width: 0;
-}
-.lowfooter{
-    border-top: 1px solid #e9ecef;
+    width: 1060px;
+    height: 300px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 16px 0 0;
 }
 
-.customer{
-    padding-top: 25px;
+.footer-img{
+    width: 400px;
+}
+
+.knu-logo{
+    margin-top: 20px;
+}
+
+.my-info{
+    height: 143px;
+    margin-left: 100px;
+}
+
+.my-info h4{
     color: #666d75;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 32px;
-    position: relative;
-    text-align: left;
-    width: 50%;
 }
 
-.etc{
+.my-info span{
     color: #666d75;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    width: 50%;
-}
-
-.customer h5{
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.33;
-    margin: 0
-}
-
-.customer p{
-    color: #848c94;
-    font-size: 14px;
-    letter-spacing: -.2px;
-    line-height: 1.5;
-    margin: 10px 0 0;
-    word-break: break-all
-}
-.customer button{
-    background-color: #fff;
-    border: 1px solid #ced4da;
-    border-radius: 4px;
-    color: #495056;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 20px;
-    margin: 16px 0 0;
-    padding: 9px 8px;
-    transition: box-shadow .2s ease;
-    width: 110px;
-}
-
-.intro{
-    text-align: left;
-    width: 33.3%;
-}
-
-.intro ul{
-    list-style: none;
-    padding: 0px;
-}
-
-.intro-li{
-    font-size: 14px;
-    line-height: 2.29;
-}
-
-
-.partner{
-    text-align: left;
-    width: 33.3%;
-}
-.partner ul{
-    list-style: none;
-    padding: 0px;
-}
-
-.partner-li{
-    font-size: 14px;
-    line-height: 2.29;
-}
-
-
-.FAQ{
-    text-align: left;
-    width: 33.3%;
-}
-.FAQ ul{
-    list-style: none;
-    padding: 0px;
-}
-
-.FAQ-li{
-    font-size: 14px;
-    line-height: 2.29;
-}
-
-
-.rule{
-    display: flex;
-    flex-direction: row;
-    width: 50%;
-    list-style: none;
-    margin: 0px;
-    padding: 20px 0px 10px 0px;
-    color: #666d75;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 2.29;
-    transition: color .2s ease;
-}
-
-.rule-1{
-    margin-right: 20px;
-}
-
-.rule-2{
-    margin-right: 20px;
-    font-weight: 700;
-}
-
-.sns-logo-lang{
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    width: 50%;
-    list-style: none;
-}
-
-.justspace1{
-    margin-left: 28px;
-    display: none;
-}
-
-.sns-1{
-    margin: 0 20px 0 0;
-}
-
-.justspace2{
-    background-color: #ced4da;
-    height: 20px;
-    margin: 0 20px 0 0;
-    width: 1px;
-}
-
-.select-lang{
-    position: relative;
-    margin-left: 28px;
-}
-
-.select-lang-img1{
-    height: 24px;
-    margin-right: 4px;
-    width: 24px;
-}
-
-.select-lang-img2{
-    height: 16px;
-    width: 16px;
-}
-
-.select-button{
-    color: inherit;
-    cursor: pointer;
-    align-items: center;
-    background-color: #fff;
-    border: 1px solid #ced4da;
-    border-radius: 4px;
-    display: flex;
-    height: 40px;
-    justify-content: space-between;
-    outline: none;
-    padding: 0 10px;
-    width: 118px;
-}
-
-.language{
-    color: #848c94;
-    font-size: 14px;
-    font-weight: 500;
-    vertical-align: top;
-}
-
-.explanation{
-    color: #848c94;
-    font-size: 12px;
-    line-height: 1.67;
-    margin: 16px 0 0;
-    text-align: left;
-    padding-bottom: 20px;
 }

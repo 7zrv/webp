@@ -16,17 +16,17 @@ main{
     z-index: 1;
 }
 
+
 .nowevent{
     padding: 3px 5px;
     border-style: solid;
     border-width: 1px;
     border-radius: 4px;
-    font-weight: bold;
+    font-weight: 800;
     font-size: 13px;
-    letter-spacing: -0.4px;
-    color: var(--green-700);
-    background-color: var(--green-50);
-    border-color: var(--green-100);
+    border-color: #94e7d1;
+    background-color: #e6f8f3;
+    color: #33b893;
 }
 
 .main-1 img{
@@ -60,7 +60,7 @@ ul.tabs li:hover{
 ul.tabs li{
     margin-left: 0px;
     background: none;
-    color: #222;
+    color: #495056;
     display: inline-block;
     padding: 10px 15px;
     cursor: pointer;

@@ -2,9 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta content="현지 투어, 여행 가이드, 투어 가이드, 현지 가이드, 가이드 투어, 마이리얼트립, 현지정보, 여행정보, 입장권, 교통패스, 액티비티, 여행사, 호텔예약, 해외호텔, 호텔할인, 즉시확정, 한인민박, 민박, 와이파이, 유심, 여행자보험, 항공권, 항공권 검색, 최저가 항공권" name="keywords">
     <title>마이 리얼 트립</title>
-
+    <link rel="icon" href="media\tabicon.png">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="footer.css">
@@ -16,32 +15,37 @@
       <div class="topheader">
         <div class="topheader-wrap">
           <!-- 메인로고 -->
-          <div class="mainlogo">
+          <div class="mainlogo" onclick="location.href='#';">
             <div id="logo-div">
-              <img id="logo-img"  src="project (2)/media/logo.jpeg">
+              <img id="logo-img"  src="media\KakaoTalk_20220524_170746967.png">
             </div>
           </div>
           <!--검색창-->
           <div class="searchbox-wrap">
             <div class="searchbox">
-
+              <div class="searchbox-img-wrap">
+                <img class="searchbox-img" src="media\ic_search_20x20_gray_500.svg">
+              </div>
+              <div class="inputbox-wrap">
+                <input class="inputbox" type="text" placeholder="도시나 상품을 검색해보세요">
+              </div>
             </div>
           </div>
           <!--gni-->
           <div class="gni-wrap">
             <div class="gni">
               <div class="partner">
-                <div class="partner-inner">
+                <div class="partner-inner" onclick="location.href='#';">
                   <span class="gni-span0">파트너 등록하기</span>
                 </div>
               </div>
               <div class="login">
-                <div class="login-inner">
+                <div class="login-inner" onclick="location.href='#';">
                   <span class="gni-span1">로그인</span>
                 </div>
               </div>
               <div class="join">
-                <div class="join-inner">
+                <div class="join-inner" onclick="location.href='#';">
                   <span class="gni-span2">회원가입</span>
                 </div>
               </div>
@@ -55,7 +59,7 @@
           <div class="allmenu">
             <div class="menu" >
               <a href="https://www.myrealtrip.com/" class="allmenu-a" id="menu">
-                <img src="https://d2ur7st6jjikze.cloudfront.net/cms_icons/69_original_1651050188.png?1651050188">
+                <img src="media\home.png">
                 <span>홈</span>
               </a>
             </div>
@@ -605,86 +609,17 @@
 
     </main>
     <footer>
-      <div class="topfooter">
-        <div class="customer"> 
-          <h5>고객지원실 운영안내</h5>
-          <p>
-             <span>연중무휴 09:00-18:00</span>
-             <br>
-             <span>주말/공휴일 포함, 한국시간 기준</span>
-             <br>
-             <span>※ 항공권 환불/변경은 평일 09:00-17:00 접수 가능</span>
-             <br>
-             <span>유선상담 1670-8208</span>
-          </p>
-          <button type="button">1:1 채팅상담</button>
-        </div>
-        <div class="etc">
-            <div class="intro">
-                <h4>소개</h4>
-                <ul>
-                  <li class="intro-li"><a>회사소개</a></li>
-                  <li class="intro-li"><a>채용</a></li>
-                  <li class="intro-li"><a>공고</a></li>
-                </ul>
-            </div>
-            <div class="partner">
-              <h4>파트너</h4>
-                <ul>
-                  <li class="partner-li"><a>파트너 등록하기</a></li>
-                  <li class="partner-li"><a>Affiliate 프로그램</a></li>
-                  <li class="partner-li"><a>리얼파트너</a></li>
-                  <li class="partner-li"><a>파트너 블로그</a></li>
-                </ul>
-            </div>
-            <div class="FAQ">
-              <h4>지원</h4>
-                <ul>
-                  <li class="FAQ-li"><a>자주 묻는 질문</a></li>
-                  <li class="FAQ-li"><a>최저가 보장제</a></li>
-                </ul>
-            </div>
-        </div>
+      <div class="footer-img">
+        <img class="knu-logo" src="media\knulogo.png">
       </div>
-      <div class="lowfooter">
-        <ul class="rule">
-          <li class="rule-1"><a href="">이용 약관</a></li>
-          <li class="rule-2"><a  href="">개인정보 처리방침</a></li>
-          <li class="rule-3"><a  href="">취소 및 환불 정책</a></li>
-        </ul>
-        <ul class="sns-logo-lang">
-          <div class="justspace1"></div>
-          <li class="sns-1"><a><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxwYXRoIGZpbGw9IiNBREI1QkQiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTE5IDRjMC0xLjU3Ni0xLjQyMy0zLTMtM0g0QzIuNDIzIDEgMSAyLjQyNCAxIDR2MTJjMCAxLjU3NiAxLjQyMyAzIDMgM2g2di02LjhINy44di0zSDEwVjguMDMxQzEwIDYuMDE1IDExLjUxNCA0LjIgMTMuMzc1IDQuMkgxNS44djNoLTIuNDI1Yy0uMjY1IDAtLjU3NS4zMjItLjU3NS44MDVWOS4yaDN2M2gtM1YxOUgxNmMxLjU3NyAwIDMtMS40MjQgMy0zVjR6Ii8+Cjwvc3ZnPgo="></a></li>
-          <li class="sns-1"><a><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxwYXRoIGZpbGw9IiNBREI1QkQiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTMgMWgxNGEyIDIgMCAwIDEgMiAydjE0YTIgMiAwIDAgMS0yIDJIM2EyIDIgMCAwIDEtMi0yVjNhMiAyIDAgMCAxIDItMnptMTEuMzk2IDQuNWgtMi42MDV2NC44Mkw3LjYzMyA1LjVINS41djkuMDQ1aDIuNTkyVjkuODg3bDQuMTU4IDQuNjU4aDIuMTQ2VjUuNXoiLz4KPC9zdmc+Cg=="></a></li>
-          <li class="sns-1"><a><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxnIGZpbGw9IiNBREI1QkQiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTE3LjMxMyAxMy45NmEzLjM1NSAzLjM1NSAwIDAgMS0zLjM1MiAzLjM1Mkg1Ljk0YTMuMzU1IDMuMzU1IDAgMCAxLTMuMzUyLTMuMzUxVjUuOTRBMy4zNTUgMy4zNTUgMCAwIDEgNS45NCAyLjU4OGg4LjAyYTMuMzU2IDMuMzU2IDAgMCAxIDMuMzUyIDMuMzUydjguMDJ6TTEzLjk2IDFINS45NEE0Ljk0NiA0Ljk0NiAwIDAgMCAxIDUuOTR2OC4wMmE0Ljk0NSA0Ljk0NSAwIDAgMCA0Ljk0IDQuOTRoOC4wMmE0Ljk0NSA0Ljk0NSAwIDAgMCA0Ljk0LTQuOTRWNS45NEE0Ljk0NSA0Ljk0NSAwIDAgMCAxMy45NiAxeiIvPgogICAgICAgIDxwYXRoIGQ9Ik0xMC4xMTMgMTMuMTM3YTMuMDI4IDMuMDI4IDAgMCAxLTMuMDI1LTMuMDI1IDMuMDI4IDMuMDI4IDAgMCAxIDMuMDI1LTMuMDI0IDMuMDI4IDMuMDI4IDAgMCAxIDMuMDI0IDMuMDI0IDMuMDI4IDMuMDI4IDAgMCAxLTMuMDI0IDMuMDI1bTAtNy42MzdBNC42MTggNC42MTggMCAwIDAgNS41IDEwLjExM2E0LjYxOCA0LjYxOCAwIDAgMCA0LjYxMyA0LjYxMiA0LjYxOCA0LjYxOCAwIDAgMCA0LjYxMi00LjYxMkE0LjYxOCA0LjYxOCAwIDAgMCAxMC4xMTMgNS41TTE0LjcwNCA0LjM3NWExLjAwNCAxLjAwNCAwIDAgMC0xIDFjMCAuMjYzLjEwOC41Mi4yOTQuNzA3LjE4Ni4xODYuNDQ0LjI5My43MDYuMjkzLjI2NCAwIC41MjEtLjEwNy43MDgtLjI5M2ExLjAwNCAxLjAwNCAwIDAgMCAwLTEuNDE1IDEuMDA0IDEuMDA0IDAgMCAwLS43MDgtLjI5MiIvPgogICAgPC9nPgo8L3N2Zz4K"></a></li>
-          <li class="sns-1"><a><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCI+CiAgICA8ZGVmcz4KICAgICAgICA8cGF0aCBpZD0iYSIgZD0iTTAgMGgyMHYxNEgweiIvPgogICAgPC9kZWZzPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDMpIj4KICAgICAgICA8bWFzayBpZD0iYiIgZmlsbD0iI2ZmZiI+CiAgICAgICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI2EiLz4KICAgICAgICA8L21hc2s+CiAgICAgICAgPHBhdGggZmlsbD0iI0FEQjVCRCIgZD0iTTggMTBWNGw1LjE5NiAzTDggMTB6bTExLjU4Mi03LjgxNEEyLjUwNSAyLjUwNSAwIDAgMCAxNy44MTQuNDE4QzE2LjI1NCAwIDEwIDAgMTAgMFMzLjc0NiAwIDIuMTg2LjQxOGMtLjg2LjIzLTEuNTM4LjkwOC0xLjc2OCAxLjc2OEMwIDMuNzQ2IDAgNyAwIDdzMCAzLjI1NC40MTggNC44MTRjLjIzLjg2LjkwOCAxLjUzOCAxLjc2OCAxLjc2OEMzLjc0NiAxNCAxMCAxNCAxMCAxNHM2LjI1NCAwIDcuODE0LS40MThhMi41MDUgMi41MDUgMCAwIDAgMS43NjgtMS43NjhDMjAgMTAuMjU0IDIwIDcgMjAgN3MwLTMuMjU0LS40MTgtNC44MTR6IiBtYXNrPSJ1cmwoI2IpIi8+CiAgICA8L2c+Cjwvc3ZnPgo="></a></li>
-          <div class="justspace2"></div>
-          <li class="sns-1"><a><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCI+CiAgICA8ZGVmcz4KICAgICAgICA8cGF0aCBpZD0iYSIgZD0iTTAgMGgxNnYxOEgweiIvPgogICAgPC9kZWZzPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyIDEpIj4KICAgICAgICA8bWFzayBpZD0iYiIgZmlsbD0iI2ZmZiI+CiAgICAgICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI2EiLz4KICAgICAgICA8L21hc2s+CiAgICAgICAgPHBhdGggZmlsbD0iI0FEQjVCRCIgZD0iTTExLjU1NC4zNWMwIC44NzUtLjMyIDEuNjkyLS45NTcgMi40NDktLjc2OS44OTktMS42OTkgMS40MTgtMi43MDggMS4zMzZhMi42ODggMi42ODggMCAwIDEtLjAyLS4zMzFjMC0uODQuMzY2LTEuNzQgMS4wMTUtMi40NzVBMy45MTIgMy45MTIgMCAwIDEgMTAuMTIxLjRjLjQ5OS0uMjQzLjk3MS0uMzc4IDEuNDE1LS40MDEuMDEzLjExNy4wMTguMjM0LjAxOC4zNW0zLjM3NiAxMy4yODdhOS40OTYgOS40OTYgMCAwIDEtLjk0IDEuNjljLS40OTUuNzA2LS45IDEuMTk0LTEuMjEyIDEuNDY1LS40ODQuNDQ2LTEuMDAyLjY3NC0xLjU1Ny42ODYtLjM5OSAwLS44OC0uMTEzLTEuNDM5LS4zNDMtLjU2MS0uMjMtMS4wNzgtLjM0My0xLjU0OS0uMzQzLS40OTUgMC0xLjAyNi4xMTQtMS41OTMuMzQzLS41NjguMjMtMS4wMjYuMzUtMS4zNzYuMzYyLS41MzMuMDIyLTEuMDY0LS4yMTItMS41OTMtLjcwNS0uMzM4LS4yOTQtLjc2MS0uOC0xLjI2Ny0xLjUxNi0uNTQ0LS43NjQtLjk5MS0xLjY1Mi0xLjM0MS0yLjY2MkMuNjg4IDExLjUyMi41IDEwLjQ2NC41IDkuNDRjMC0xLjE3Mi4yNTQtMi4xODQuNzYxLTMuMDMxYTQuNDYzIDQuNDYzIDAgMCAxIDEuNTk0LTEuNjEyIDQuMjkyIDQuMjkyIDAgMCAxIDIuMTU1LS42MDhjLjQyMiAwIC45NzcuMTMgMS42NjYuMzg4LjY4Ny4yNTggMS4xMjguMzg4IDEuMzIyLjM4OC4xNDQgMCAuNjM1LS4xNTMgMS40NjYtLjQ1Ny43ODUtLjI4MyAxLjQ0OC0uNCAxLjk5Mi0uMzU0IDEuNDcyLjExOSAyLjU3OC42OTkgMy4zMTMgMS43NDQtMS4zMTYuNzk4LTEuOTY3IDEuOTE2LTEuOTU0IDMuMzQ5LjAxMSAxLjExNy40MTYgMi4wNDYgMS4yMTMgMi43ODMuMzYuMzQzLjc2My42MDggMS4yMTIuNzk2LS4wOTguMjgtLjIwMS41NS0uMzEuODEiIG1hc2s9InVybCgjYikiLz4KICAgIDwvZz4KPC9zdmc+Cg=="></a></li>
-          <li class="sns-1"><a><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCI+CiAgICA8ZGVmcz4KICAgICAgICA8cGF0aCBpZD0iYSIgZD0iTS42MTguMjA3aDYuMzU0djUuMjM1SC42MTh6Ii8+CiAgICAgICAgPHBhdGggaWQ9ImMiIGQ9Ik0wIC40ODhoNy44MTNWMTdIMHoiLz4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZmlsbD0iI0FEQjVCRCIgZD0iTTQuNTMgMTguMjdsOC44NjEtNC45OTMtMi4xNzUtMi40OTh6TTExLjIxNiA5LjgxM2wyLjI1NS0yLjQxNi04Ljc4LTQuOTk1eiIvPgogICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDExIDcuNTEyKSI+CiAgICAgICAgICAgIDxtYXNrIGlkPSJiIiBmaWxsPSIjZmZmIj4KICAgICAgICAgICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI2EiLz4KICAgICAgICAgICAgPC9tYXNrPgogICAgICAgICAgICA8cGF0aCBmaWxsPSIjQURCNUJEIiBkPSJNNi40OTggMi4xNEwzLjAzNS4yMDcuNjE4IDIuODY1bDIuMjU1IDIuNTc3IDMuNTQ0LTIuMDEzYy43MjYtLjMyMy43MjYtLjk2Ny4wODEtMS4yOSIgbWFzaz0idXJsKCNiKSIvPgogICAgICAgIDwvZz4KICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzIDEuNTEyKSI+CiAgICAgICAgICAgIDxtYXNrIGlkPSJkIiBmaWxsPSIjZmZmIj4KICAgICAgICAgICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI2MiLz4KICAgICAgICAgICAgPC9tYXNrPgogICAgICAgICAgICA8cGF0aCBmaWxsPSIjQURCNUJEIiBkPSJNMCAxLjI5M3YxNC45MDFjMCAuNDg0LjE2LjcyNS40ODMuODA2bDcuMzMtOC4yMTZMLjQ4My40ODdDLjE2LjY0OCAwIC44OSAwIDEuMjkzIiBtYXNrPSJ1cmwoI2QpIi8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K"></a></li>
-          <div></div>
-          <div class="select-lang">
-            <button class="select-button"  type="button">
-              <div>
-                <img class="select-lang-img1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlPSIjQURCNUJEIiBzdHJva2Utd2lkdGg9IjEuNSI+CiAgICAgICAgPGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iOCIvPgogICAgICAgIDxlbGxpcHNlIGN4PSIxMiIgY3k9IjEyIiByeD0iNCIgcnk9IjgiLz4KICAgICAgICA8cGF0aCBkPSJNNCAxMmgxNk0xMiA0djE2Ii8+CiAgICA8L2c+Cjwvc3ZnPgo=">
-                <span class="language">한국어</span>
-              </div>
-              <img class="select-lang-img2" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZmlsbD0iI0Y1RjZGNyIgZD0iTS0xMjU2LTM2NEgyODh2Mjk1OGgtMTU0NHoiLz4KICAgICAgICA8cGF0aCBmaWxsPSIjRkZGIiBkPSJNLTEyMjQtMjU5SDIxNnY0MDdoLTE0NDB6Ii8+CiAgICAgICAgPGcgc3Ryb2tlPSIjQ0VENERBIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtOTEgLTEyKSI+CiAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMTYiIGhlaWdodD0iMzkiIHg9Ii41IiB5PSIuNSIgZmlsbD0iI0ZGRiIgcng9IjQiLz4KICAgICAgICAgICAgPHBhdGggc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik0xMDMgMThsLTQuMDAyIDRMOTUgMTguMDA1Ii8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K">
-            </button>
-          </div>
-        </ul>
-        <p class="explanation">
-          상호명 (주)마이리얼트립 | 대표 이동건 | 개인정보보호책임자 정재훈 | 사업자등록번호 209-81-55339 
-          <a>사업자정보확인</a>
-           | 통신판매업신고번호 2019-서울서초-0260"
-          <br>
-          주소 서울특별시 서초구 강남대로 311, 드림플러스 강남 18~19층 (서초동, 한화생명보험빌딩) | 이메일 help@myrealtrip.com | 마케팅/제휴 문의 marketing@myrealtrip.com
-          <br>
-          <br>
-          
-          자사는 서울특별시관광협회 공제영업보증보험에 가입되어 있습니다. 
-                        마이리얼트립은 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 상품·거래정보 및 거래에 대하여 책임을 지지않습니다.
-        </p>
+      <div class="my-info">
+        <h4>소개</h4>
+        <span>윤서진 </span>
       </div>
+
+               
+            
+
     </footer>
   </body>
 </html>
