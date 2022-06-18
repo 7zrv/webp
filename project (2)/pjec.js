@@ -120,7 +120,11 @@ $(document).ready(function(){
 
     var src = jQuery('img', $(this)).attr("src");
     jQuery('.popup-box img').attr("src",src);
-
+    //예약 완료값 초기화
+    $('.reservation-wrap').show();
+    $('.reserv-success').hide();
+    $('#reservation-name').val('');
+    $('#reservation-phone').val('');
 
     $('.pop-shadow').show();
     $('.popup-box').show();
