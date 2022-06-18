@@ -134,9 +134,41 @@
       <!--맨위로 가기 버튼-->
       <div class="movetop-button">
           <a href="">
-            <img class="movetop-img" src="/Users/yunseojin/Downloads/webp-main/project (2)/media/movetop-img.png" title="맨위로">
+            <img class="movetop-img" src="media\movetop-img.png" title="맨위로">
           </a>
       </div>
+      <!--팝업시 배경-->
+      <div class="pop-shadow">
+        
+      </div>
+
+      <!--팝업창-->
+      <div class="popup-box" >
+        <div>
+          <img class="content-img" src="media/cabi.png">
+        </div>
+        <div class="reservation-wrap">
+          <form class="reservation_form">
+              <h1>티켓 구매</h1>
+              <label for = "reservation-name"  > 성함&nbsp;&nbsp;&nbsp;&nbsp; </label >
+              <input id="reservation-name" type="text" placeholder="성함" onfocus="this.placeholder=''"
+              onblur="this.placeholder='성함'">
+              <br>
+              <label for = "reservation-phone"  > 연락처 </label >
+              <input id="reservation-phone" type="text" minlength="11" maxlength="11"  placeholder="-없이 입력" onfocus="this.placeholder=''"
+              onblur="this.placeholder='-없이 입력'"><br>
+              <button id="reservation-btn">예약하기</button>
+          </form>
+      </div>
+      <div class="reserv-success">
+        <h1>예약완료!</h1>
+        <p id="p1">해당 qr코드를 입장소에서 제시해주세요.</p>
+        <br>
+        <p id="p2">환불은 안됩니다.</p>
+      </div>
+      </div>
+      
+      <!--/팝업창-->
 
       <div>
         <div class="maintop">
@@ -167,21 +199,7 @@
               <li class="tab-link" data-tab="tab-4">해외 호캉스</li>
             </ul>
            
-            <!--팝업창-->
-            <div class="popup-box" >
-              <div>
-                <img class="content-img" src="media/cabi.png">
-              </div>
-              <div class="content-info">
-                <span class="ticket-city">티켓 ・ 경기도</span>
-                <br>
-                <span class="hotel-name">캐리비안베이 + 에버랜드 </span>
-              </div>
-            </div>
-            <div class="pop-shadow">
-              
-            </div>
-            <!--/팝업창-->
+            
 
             <div class="content-container">
               <div id="tab-1" class="tab-content current">
@@ -377,7 +395,7 @@
                       <div class="content-info">
                         <span class="ticket-city">티켓 ・ 강원도</span>
                         <br>
-                        <span class="hotel-name">양양 서핑 + 씨크루즈 호텔 숙박권</span>
+                        <span class="hotel-name">양양 씨크루즈 호텔 숙박권</span>
                         <div class="content-info-low">
                           <span class="review-event">
                             <img src="media/review-img.svg"> 후기 이벤트
@@ -396,7 +414,7 @@
                     <div class="content-info">
                       <span class="ticket-city">티켓 ・ 충청도</span>
                       <br>
-                      <span class="hotel-name">단양 패러글라이딩 + 호텔 숙박권</span>
+                      <span class="hotel-name">단양 패러글라이딩  호텔 숙박</span>
                       <div class="content-info-low">
                         <span class="review-event">
                           <img src="media/review-img.svg"> 후기 이벤트
@@ -601,7 +619,7 @@
                     <div class="content-info">
                       <span class="ticket-city">티켓 ・ 인도네시아</span>
                       <br>
-                      <span class="hotel-name">래디슨 블루 발리 울루와투 숙박권</span>
+                      <span class="hotel-name">블루 발리 울루와투 숙박권</span>
                       <div class="content-info-low">
                         <span class="review-event">
                           <img src="media/review-img.svg"> 후기 이벤트

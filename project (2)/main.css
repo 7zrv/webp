@@ -87,30 +87,93 @@ ul.tabs li.current{
 }
   
 .popup-box{
+    left: 0;
+    top: 0;
     display: none;
     position: absolute;
     width: 400px;
     height: 500px;
-    border:1px solid #dee2e6;
+    border:none;
     border-radius: 4px;
+    background-color: white;
+    z-index: 9999;
 }
-
-
-
 
 .popup-box img{
     width: 100%;
-    height: 50%;
+    height: 250px;
 }
 
 .pop-shadow{
-    position: fixed;
-    left: 0;
-    top: 0;
-    background: rgba(0, 0, 0, 0.52);
-    width: 100%;
-    height: 100%;
     display: none;
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:#000;
+  opacity: 0.5;; 
+  z-index: 9000;
+}
+
+.reservation-wrap{
+    text-align: center;
+}
+
+.reservation-wrap h1{
+    color: #666d75;
+}
+
+.reservation-wrap label{
+    font-size: 20px;
+    font-weight: 700;
+    color: #495056;
+}
+.reservation-wrap input{
+    font-size: 20px;
+    margin-bottom: 12px;
+    border: none;
+    background-color: #f5f6f7;
+    border-radius: 4px;
+}
+
+.reservation-wrap input{
+    font-size: 20px;
+    margin-bottom: 12px;
+    border: none;
+    background-color: #f5f6f7;
+    border-radius: 4px;
+}
+.reserv-success{
+    display: none;
+    text-align: center;
+}
+
+.reserv-success h1{
+    color:#495056;
+}
+
+#p1{
+    color:#666d75;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+#p2{ 
+    color: #848c94;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.reservation-wrap button{
+    width: 100px;
+    height: 30px;
+    font-weight: 600;
+    border: 1px solid #2b96ed;
+    border-radius: 3px;
+    color: #2b96ed;
+    cursor: pointer;
+    background-color: white;
 }
 
 .tab-content{

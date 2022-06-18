@@ -107,19 +107,49 @@ $(document).ready(function(){
 
 });
 
+
+//티켓 클릭시 팝업창 생성, 위치 조정, 티켓 요소에서 이미지 주소를 불러와서 보여줌
 $(document).ready(function(){
-  $('.contents-wrap').click(function(){
-    var $layerPopupobj = $('.popup-box');
-    var left = ($(window).scrollLeft() + ($(window).width() - $layerPopupobj.width())/2);
-    var top = ($(window).scrolltop() + ($(window).height() - $layerPopupobj.height())/2);
-    $layerPopupobj.css({'left':left, 'top'})
+  $('.contents-wrap').click(function(){    
+    $('.popup-box').css("top", $(window).scrollTop() + ($(window).height() - $('.popup-box').height()) / 2);    
+    $('.popup-box').css("left",  $(window).scrollLeft() + ($(window).width() - $('.popup-box').width()) / 2);
+
+    $('.contents-wrap').removeClass('current');
+   
+    $(this).addClass('current');
+
+    var src = jQuery('img', $(this)).attr("src");
+    jQuery('.popup-box img').attr("src",src);
+
+
     $('.pop-shadow').show();
     $('.popup-box').show();
+    $("body").css("overflow","hidden");
   })
   $('.pop-shadow').click(function(){
     $('.pop-shadow').hide();
     $('.popup-box').hide();
+    $("body").css("overflow","auto");//body 스크롤바 생성
   })
 
+})
+
+$(document).ready(function(){
+  $('#reservation-btn').click(function(){
+    var nameVal = $('#reservation-name').val();
+    var phoneVal = $('#reservation-phone').val();
+    if(nameVal == ''){
+      alert("이름을 입력해주세요.")
+    }
+    else if(phoneVal.length < 11 || $.isNumeric(phoneVal) != true){
+      alert("올바른 전화번호가 아닙니다.")
+    }
+    else{
+      jQuery('.popup-box img').attr("src","media/qrcode.jpg");
+      
+      $('.reservation-wrap').hide();
+      $('.reserv-success').show();
+    }
+  })    
 })
 
